@@ -1,0 +1,14 @@
+<table>
+    <tr>
+      <th>Título</th>
+      <th>Género</th>
+      <th>Año de lanzamiento</th>
+    </tr>
+    <button (click)="generarPDF()">Generar PDF</button>
+    <tr *ngFor="let pelicula of peliculas">
+      <td>{{ pelicula.titulo }}</td>
+      <td>{{ pelicula.genero }}</td>
+      <td>{{ pelicula.lanzamiento }}</td>
+    </tr>
+  </table>
+  
