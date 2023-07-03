@@ -13,5 +13,20 @@
     "titulo": "Pelicula 3",
     "genero": "Drama",
     "lanzamiento": 2021
+  },
+  {
+    "titulo": "Pelicula 4",
+    "genero": "Terror",
+    "lanzamiento": 2007
+  },
+  {
+    "titulo": "Pelicula 5",
+    "genero": "Comedia",
+    "lanzamiento": 1994
+  },
+  {
+    "titulo": "Pelicula 6",
+    "genero": "Ficción",
+    "lanzamiento": 2018
   }
 ]

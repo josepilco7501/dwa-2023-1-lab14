@@ -1,18 +1,80 @@
+ /* Estilo para el título */
+ h1 {
+  font-family: 'Arial', sans-serif;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+/* Estilo para la tabla */
 table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: left;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-    background-color: #ddd;
-  }
-  
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los encabezados de la tabla */
+th {
+  background-color: #171717;
+  color: #ffffff;
+  padding: 10px;
+  text-align: left;
+  font-weight: normal;
+}
+
+/* Estilo para las filas de la tabla */
+td {
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+
+/* Estilo para el botón */
+button {
+  background-color: #ff5722;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.boton-creativo:hover {
+  background-color: #e64a19;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.generar-btn {
+  align-self: flex-start; /* Alineación a la izquierda */
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos adicionales para los elementos del formulario */
+.form label,
+.form input {
+  margin-right: 10px;
+}
+
+.boton-filtro{
+  margin-left: 5px;
+}
+
+label{
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+}

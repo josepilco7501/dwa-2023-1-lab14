@@ -1,10 +1,27 @@
+<h1>INFORME DE PELÍCULAS</h1>
+
+<div class="header">
+  <button (click)="generarPDF()">Generar PDF</button>
+  <button (click)="exportarCSV()">Exportar a Excel</button>
+  <form (ngSubmit)="aplicarFiltros()">
+
+      <label for="genero">Género:</label>
+      <input type="text" id="genero" [(ngModel)]="filtroGenero" name="genero">
+    
+      <label for="anio">Año de lanzamiento:</label>
+      <input type="number" id="anio" [(ngModel)]="filtroAnio" name="lanzamiento">
+      <button class="boton-filtro" (click)="borrarFiltros()">Borrar filtros</button>
+      <button class="boton-filtro" type="submit">Aplicar filtros</button>
+    
+  </form>
+</div>
+
 <table>
     <tr>
       <th>Título</th>
       <th>Género</th>
       <th>Año de lanzamiento</th>
     </tr>
-    <button (click)="generarPDF()">Generar PDF</button>
     <tr *ngFor="let pelicula of peliculas">
       <td>{{ pelicula.titulo }}</td>
       <td>{{ pelicula.genero }}</td>
